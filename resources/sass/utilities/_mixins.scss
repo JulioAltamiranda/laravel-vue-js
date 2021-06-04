@@ -1,0 +1,17 @@
+@mixin reset-button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+@mixin button {
+    @include reset-button;
+    padding: 12px;
+    opacity: .9;
+    transition: .2s;
+    border-radius: $base-border-radius;
+    &:hover{
+        opacity: 1;
+    }
+}

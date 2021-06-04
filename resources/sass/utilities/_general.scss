@@ -1,0 +1,29 @@
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.color-purple{
+    color: $purple;
+}
+.color-gray{
+    color: $gray;
+}
+.w-100{
+    width: 100%;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+opacity: 0;
+}

@@ -1,0 +1,17 @@
+.user-profile {
+    .content {
+        background-color: #e1e1e1;
+        padding: 20px;
+        border: 1px solid #e1e1e1;
+        overflow-x: auto;
+        .flex-item {
+            display: grid;
+            grid-template-columns: 220px 30px;
+            font-size: 15px;
+            margin: 20px 0;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

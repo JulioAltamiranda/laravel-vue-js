@@ -1,0 +1,25 @@
+.btn{
+    @include button;
+}
+.btn-purple{
+    background-color: $purple;
+    color: #fff;
+}
+.btn-purple-two{
+    background-color: $purple-two;
+    color: #fff;
+}
+.btn-green{
+    background-color: $green;
+    color: #fff;
+}
+.btn-red{
+    background-color: $red;
+    color: #fff;
+}
+.btn-groups{
+    display: grid;
+    grid-template-columns: repeat(3,30px);
+    gap: 8px;
+    height: 100%;
+}
