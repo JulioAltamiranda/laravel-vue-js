@@ -34,9 +34,9 @@
             <div class="navbar-left">
                 <div class="navbar-left-body">
                     <ul>
-                        <li><a href="{{route('dashboard')}}" class="{{request()->is('dashboard')?'active':''}}">Dashboard</a></li>
-                        <li><a href="{{route('dashboard.products')}}" class="{{request()->is('dashboard/products')?'active':''}}">Products</a></li>
-                        <li><a href="{{route('dashboard.profile')}}" class="{{request()->is('dashboard/profile')?'active':''}}">Profile</a></li>
+                        <li><a href="{{route('dashboard')}}" class="{{currentRoute('dashboard')?'active':''}}">Dashboard</a></li>
+                        <li><a href="{{route('dashboard.products')}}" class="{{currentRoute('dashboard/products')?'active':''}}">Products</a></li>
+                        <li><a href="{{route('dashboard.profile')}}" class="{{currentRoute('dashboard/profile')?'active':''}}">Profile</a></li>
                     </ul>
                 </div>
                 <div class="navbar-left-footer">
