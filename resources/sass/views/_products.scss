@@ -1,0 +1,18 @@
+.products .content {
+    @media screen and (max-width:1133px) {
+        overflow-x: auto;
+    }
+    table {
+        margin-top: 40px;
+    }
+}
+.products table tbody p{
+    font-size: 14px;
+    text-align: left;
+    padding: 12px;
+}
+.products .image-form{
+    width: 100px;
+    border-radius: 3px;
+    margin: auto;
+}

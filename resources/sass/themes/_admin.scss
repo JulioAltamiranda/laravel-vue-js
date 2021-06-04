@@ -1,0 +1,139 @@
+html {
+    position: relative;
+    height: 100%;
+}
+
+.theme-admin {
+    background-color: $gray-three;
+    width: 100%;
+    position: relative;
+    .container{
+        padding-bottom: 100px;
+    }
+    .btn {
+        border-radius: 4px;
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+    .form-control {
+        border-radius: 4px;
+        padding: 8px;
+    }
+    .navbar {
+        padding: 20px 0 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        .navbar-user {
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                margin-right: 10px;
+            }
+            form {
+                button {
+                    @include reset-button;
+                    color: #000;
+                    font-size: 16px;
+                    span {
+                        padding: 0 4px;
+                        color: $purple !important;
+                    }
+                }
+            }
+        }
+        border-bottom: 1px solid #ccc;
+    }
+    main {
+        display: flex;
+        @media screen and (max-width:1133px) {
+            flex-direction: column;
+        }
+    }
+    .navbar-left {
+        width: 220px;
+        margin-right: 20px;
+        @media screen and (max-width:1133px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        .navbar-left-body {
+            margin-bottom: 20px;
+            ul {
+                border-bottom: 1px solid #e1e1e1;
+                li {
+                    a {
+                        color: $purple-two;
+                        display: block;
+                        width: 100%;
+                        padding: 11px;
+                        border: 1px solid #e1e1e1;
+                        border-bottom-color: transparent;
+                        transition: 0.2s;
+                        &:hover {
+                            color: $purple;
+                        }
+                        &.active {
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-left-footer {
+            button {
+                @include reset-button;
+                display: block;
+                font-size: 16px;
+                width: 100%;
+                padding: 11px;
+                border: 1px solid #e1e1e1;
+                text-align: left;
+                transition: 0.2s;
+                &:hover {
+                    color: $purple;
+                }
+                &.active {
+                    color: $purple;
+                }
+            }
+        }
+    }
+    #app {
+        width: 800px;
+        @media screen and (max-width:1133px) {            
+            width: 100%;
+        }
+    }
+    .content-right {
+        position: relative;
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        padding: 20px;
+        min-height: 500px;
+        @media screen and (max-width:1133px) {
+            min-height: 100%;
+            
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+        
+        
+    }
+
+    footer {
+        margin-top: 40px;
+        position: fixed;
+        bottom: 0;
+        padding: 20px;
+        background-color: $purple-two;
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+    }
+}
