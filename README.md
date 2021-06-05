@@ -15,9 +15,9 @@ login y registro personalizado con un crud de productos
 5. Crea un nuevo archivo llamado .env dentro del proyecto y copia el contenido del archivo .env.example a .env archivo nuevo que creaste
 6. Crea una base de datos para el proyecto
 7. Modifica las siguientes variables de conexion en el archivo .env que creaste:
-* DB_DATABASE=
-* DB_USERNAME=
-* DB_PASSWORD=
+* DB_DATABASE=tubasededatos
+* DB_USERNAME=tunombredeusuario
+* DB_PASSWORD=tucontrasenia
 8. Ejecuta las migraciones:  
 ```
 php artisan migrate 
