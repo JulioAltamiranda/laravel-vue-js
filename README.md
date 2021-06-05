@@ -18,18 +18,19 @@ login y registro personalizado con un crud de productos
 * DB_DATABASE=tubasededatos
 * DB_USERNAME=tunombredeusuario
 * DB_PASSWORD=tucontrasenia
-8. Ejecuta las migraciones:  
-```
-php artisan migrate 
-```
-9. Carga las dependencias del proyecto con el comando:  
+
+8. Carga las dependencias del proyecto con el comando:  
 ```
 composer install
 ```
 ```
 npm install
 ```
-10. Genera una llave para el proyecto: `php artisan key:generate`
+9. Genera una llave para el proyecto: `php artisan key:generate`
+10. Ejecuta las migraciones:  
+```
+php artisan migrate 
+```
 11. Si deseas agregar imágenes a los productos, ejecuta este comando `php artisan storage:link`
 12. Ejecuta el servidor: `php artisan serve`
 
