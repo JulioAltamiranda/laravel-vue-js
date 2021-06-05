@@ -4,7 +4,7 @@ login y registro personalizado con un crud de productos
 
 ## Vista previa del proyecto
 !["preview"](https://github.com/JulioAltamiranda/laravel-vue-js/blob/master/public/img/Screenshot%202021-06-04%20204816.png "preview")	
-## Vista previa del SPA en Vuejs
+
 !["preview"](https://github.com/JulioAltamiranda/laravel-vue-js/blob/master/public/img/Screenshot%202021-06-04%20204645.png "preview")	
 
 ## Instalación
