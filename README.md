@@ -10,7 +10,7 @@ login y registro personalizado con un crud de productos
 ## Instalación
 1. Selecciona un directorio en la pc para guardar el proyecto
 2. Descarga el repositorio 
-3. Descromprime la carpeta en el directorio
+3. Descomprime la carpeta en el directorio
 4. Accede a la carpeta descomprimida
 5. Crea un nuevo archivo llamado .env dentro del proyecto y copia el contenido del archivo .env.example a .env archivo nuevo que creaste
 6. Crea una base de datos para el proyecto
