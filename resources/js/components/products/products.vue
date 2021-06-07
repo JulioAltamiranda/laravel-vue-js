@@ -107,6 +107,9 @@ export default {
           throw { status: res.status, statusText: res.statusText };
         }
         this.closeModal();
+        this.product.name = "";
+        this.product.price = "";
+        this.product.stock = "";
         this.getProducts();
       } catch (error) {
         console.log(error);

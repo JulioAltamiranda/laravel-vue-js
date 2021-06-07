@@ -2227,22 +2227,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 8:
                 _this.closeModal();
 
+                _this.product.name = "";
+                _this.product.price = "";
+                _this.product.stock = "";
+
                 _this.getProducts();
 
-                _context.next = 15;
+                _context.next = 18;
                 break;
 
-              case 12:
-                _context.prev = 12;
+              case 15:
+                _context.prev = 15;
                 _context.t0 = _context["catch"](0);
                 console.log(_context.t0);
 
-              case 15:
+              case 18:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 12]]);
+        }, _callee, null, [[0, 15]]);
       }))();
     },
     getProducts: function getProducts() {
