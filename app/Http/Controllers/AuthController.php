@@ -20,7 +20,7 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            $user=User::whereEmail($request->email)->first();
+            $user = User::whereEmail($request->email)->first();
             Auth::login($user);
             return response()->json(['message' => 'login!'], 200);
         }
@@ -48,15 +48,13 @@ class AuthController extends Controller
     public function register(Request $request)
     {
         $credentials = $request->only('name', 'email', 'password');
-        
+
         if (!User::whereEmail($request->email)->first()) {
             $credentials['password'] = bcrypt($request->password);
             $user = User::create($credentials);
             Auth::login($user);
-            return response()->json(['message' => 'registered!'], 200); 
+            return response()->json(['message' => 'registered!'], 200);
         }
         return response()->json(['message' => 'there is already a user with that email'], 422);
-        
-        
     }
 }
